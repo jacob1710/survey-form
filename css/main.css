@@ -1,47 +1,82 @@
-body{
-    font-family: "Raleway", sans-serif;
-    background-color: rgb(169, 215, 209)
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+* {
+  box-sizing: border-box;
 }
 
-main{
-    background-color: white;
-    margin: 0px 15% 0px 15%;
-}
-#title{
-    text-align: center;
-    font-size: 32px;
-    font-weight: bold;
-    font-family: "Raleway", sans-serif;
-}
-#heading{
-    text-align: center;
-    padding: 10px;
-}
-select{
-    margin: 20px 0px 20px 0px;
-}
-#dropdown{
-    height: 20px;
-}
-label{
-    padding: 20px;
-    display: inline-block;
-}
-input{
-    padding: 10px;
-    display: inline-block;
-    margin: 0px 10px 0px 0px
-}
 
-span{
-    display: block;
-    margin: 10px;
+.rowTab::after {
+  content: "";
+  margin: 20px;
+  clear: both;
+  display: table;
 }
-
 #submit{
-    text-align: center;
+  margin: 30px auto;
+  padding: 10px 30px;
+  overflow: hidden;
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+  background-color: #2ecc71;
+  color: #ecf0f1;
+}
+#preferences{
+  text-align: left;
+}
+.labels{
+  text-align: right;
+}
+.rightTab{
+  text-align: left;
+}
+body {
+  background-color: #a9d7d1;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  min-width: 320px;
+}
+#form-outer{
+  background-color: aliceblue;
+  margin: 20px 20%;
+}
+.radio-ul{
+  margin-left: 0px;
+  display: inline;
+}
+.radio input{
+  text-align: left;
+  display:inline;
 }
 
-input[radio]{
-    height: 10px;
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+  text-align: center;
+}
+.radio{
+  text-align: start;
+  margin: 0px 0px 0px 40%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
 }
